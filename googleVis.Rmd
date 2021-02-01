@@ -1,0 +1,14 @@
+---
+title: "Untitled"
+author: "Marco Antonio Béjar Villalba."
+date: "1/29/2021"
+output: html_document
+---
+
+```{r, results='asis',cache=TRUE}
+suppressPackageStartupMessages(library(googleVis))
+M <- gvisMotionChart(Fruits, "Fruit", "Year",
+                     options=list(width=600, height=400))
+print(M,"chart")
+```
+
